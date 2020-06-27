@@ -14,12 +14,12 @@ def get_args():
     parser.add_argument('-b', '--bad-chars', type=str, dest="bad_chars", 
         help='''The list of unwanted characters, example:
         Must be in following format: "\\x00\\x0a\\x0b"''')
-
+"""
     parser.add_argument('-r', '--random', action="store_true", dest="random",
         help='''If this option is present, the xor/add/and value will be a random one.
         If this option is not present, the xor/add/and value will the first one found.
-        ''')
-
+    ''')
+"""
     parser.add_argument('-a', '--arch', dest="arch", choices=["x86", "x64"],
         help=''' The shellcode architecture, if not specified, architecture dection will be performed
         Supported arch: 
