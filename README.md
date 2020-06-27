@@ -10,8 +10,8 @@ It supports both x86 and x86-64 shellcode architecture and you can also precise 
 ## Installation
 ```bash
 git clone https://github.com/Njord0/shellcode_encoder.git
-chmod +x core.py
 cd shellcode_encoder
+chmod +x core.py
 ```
 And... you are ready to use it !
 
@@ -50,3 +50,4 @@ Here is an example command with a x86 shellcode:
 ```
 
 As you can see `-a` option is not specified but the program was able to determine the architecture of the shellcode, the program is performing an architecture detection but it might not always work.
+
