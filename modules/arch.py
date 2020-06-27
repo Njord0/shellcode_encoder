@@ -48,10 +48,9 @@ def arch_detection(shellcode: list):
 
 
 def encode_x86(shellcode: list, bad_chars: list):
-    if xor_x86(shellcode, bad_chars) == False:
+    if not xor_x86(shellcode, bad_chars):
         pass
 
-
 def encode_x64(shellcode: list, bad_chars: list):
-    if xor_x64(shellcode, bad_chars) == False:
+    if not xor_x64(shellcode, bad_chars):
         pass
